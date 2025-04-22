@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h2{
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+}
+p{
+  color: #545454;
+}
+#Testimonials p{
+  color: white;
+}
+ul a.active {
+  color: #1f1f1f;
+}
+.design-1 {
+  position: absolute;
+  width: 28%;
+  height: 48%;
+  top: -8.9%;
+  left: -4.7%;
+  border: 2px solid #1f1f1f;
+  border-radius: 4px;
+  z-index: -1;
+}
+.design-2 {
+  position: absolute;
+  width: 23.7%;
+  height: 43.1%;
+  bottom: 0;
+  right: 0;
+  background: #1f1f1f;
+  border-radius: 2px;
+}
+
+.line1::before {
+  content: '';
+  @apply w-[50px] md:w-[100px] h-[3px];
+  position: relative;
+  left: 3px;
+  top: 2px;
+  background-color: black;
+}
+.line2::before{
+  content: "";
+  width: 2px;
+  position: absolute;
+  background-color: #9B9B9B;
+  display: flex;
+  @apply 
+  left-[22px] top-[79px] 
+  md:left-[26px] md:top-[93px]
+  lg:left-[31px] lg:top-[100px]
+  h-[92px]
+  lg:h-[74px];
+}
